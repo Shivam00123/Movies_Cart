@@ -36,17 +36,8 @@ class Navbar extends React.Component {
         <div className="search-container">
           <input placeholder="Search Movie" onChange={this.handleSearchInput} />
           <button id="search-btn" onClick={this.handleSearch}>
-            Searchh
+            search
           </button>
-
-    render(){
-        // const { showSearchResult }=this.state;
-        const {result,showSearchResult}=this.props.search;
-        return(
-            <div className="nav">
-                <div className="search-container">
-                    <input placeholder="Search Movie" onChange={this.handleSearchInput}/>
-                    <button id="search-btn" onClick={this.handleSearch}>search</button>
 
           {showSearchResult && (
             <div className="search-results">
